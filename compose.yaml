@@ -1,0 +1,23 @@
+name: paper-auto
+
+services:
+  paper-auto:
+    build: .
+    image: paper-auto:local
+    container_name: paper-auto
+    init: true
+    restart: unless-stopped
+    user: "${PAPER_AUTO_UID:-1000}:${PAPER_AUTO_GID:-1000}"
+    working_dir: /app
+    environment:
+      TZ: Asia/Seoul
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    command: ["sleep", "infinity"]
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

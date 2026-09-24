@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python3-paper-auto"
+version = "1.0.0"
+description = "Automated research-paper discovery, scoring, Telegram delivery, and email digest."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=2,<3",
+  "pypdf>=6,<7",
+  "python-dotenv>=1,<2",
+  "requests>=2.31,<3",
+]
+
+[project.scripts]
+paper-auto = "paper_trend.cli:main"
+
+[tool.setuptools]
+packages = ["paper_trend"]
+
+[tool.setuptools.package-data]
+paper_trend = ["prompts.json", "selection_policy.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

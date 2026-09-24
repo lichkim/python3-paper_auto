@@ -1,0 +1,8 @@
+{
+  "journals": [
+    {"name": "Physical Review X", "issn": "2160-3308", "group": "aps", "enabled": true},
+    {"name": "PRX Quantum", "issn": "2691-3399", "group": "aps", "enabled": true},
+    {"name": "Nature Physics", "issn": "1745-2481", "group": "nature", "enabled": true},
+    {"name": "npj Quantum Information", "issn": "2056-6387", "group": "nature", "enabled": true}
+  ]
+}

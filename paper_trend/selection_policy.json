@@ -1,0 +1,15 @@
+{
+  "version": "topic-journal-v1.0",
+  "context_window_words": 12,
+  "journal_aliases": {
+    "Phys. Rev. X": "Physical Review X",
+    "Phys Rev X": "Physical Review X",
+    "Nature Phys.": "Nature Physics",
+    "Nat. Phys.": "Nature Physics",
+    "npj Quantum Inf.": "npj Quantum Information"
+  },
+  "topic_phrases": {
+    "transmon qubit": ["transmon qubit", "transmon qubits", "transmons"],
+    "quantum state transfer": ["quantum state transfer", "quantum information transfer", "coherent quantum state transfer", "quantum state conversion"]
+  }
+}

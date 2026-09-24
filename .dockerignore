@@ -1,0 +1,13 @@
+# Only application sources belong in the image, never credentials or results.
+**
+!Dockerfile
+!requirements.txt
+!pyproject.toml
+!README.md
+!main.py
+!topics.json
+!journals.json
+!paper_trend/
+!paper_trend/**
+**/__pycache__/
+**/*.py[cod]

@@ -1,0 +1,4 @@
+openai>=2,<3
+pypdf>=6,<7
+python-dotenv>=1,<2
+requests>=2.31,<3

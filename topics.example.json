@@ -1,0 +1,11 @@
+{
+  "topics": [
+    {
+      "name": "양자 오류 정정",
+      "query": "quantum error correction",
+      "journal_match_ratio": 1.0,
+      "enabled": true,
+      "sources": ["arxiv", "semantic_scholar", "aps", "nature"]
+    }
+  ]
+}
